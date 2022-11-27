@@ -1,0 +1,48 @@
+import json
+
+data_JSON =  """
+{
+   "employee.json": [
+
+      {
+         "name": "vijay",
+         "dob": "2.10.97",
+         "height": "5.4",
+         "city": "kalyan",
+         "state": "maharashtra"
+      },
+
+      {
+         "name": "kaushik",
+         "dob": "12.08.99",
+         "height": "5.10",
+         "city": "jalgoan",
+         "state": "maharashtra"
+      },
+      {
+         "name": "aditya",
+         "dob": "24.02.98",
+         "height": "5.3",
+         "city": "thane",
+         "state": "maharashtra"
+       },
+       {
+         "name": "aniket",
+         "dob": "6.06.96",
+         "height": "5.4",
+         "city": "bhandup",
+         "state": "maharashtra"
+       },
+       {
+         "name": "abhi",
+         "dob": "11.05.93",
+         "height": "5.6",
+         "city": "satara",
+         "state": "maharashtra"
+       }
+   ]
+}
+"""
+
+data_dict = json.loads(data_JSON)
+print(data_dict["employee.json"])
